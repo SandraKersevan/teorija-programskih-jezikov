@@ -1,0 +1,6 @@
+LET REC split l =
+    MATCH l WITH
+    | [] -> {[],[]}
+    | x :: xs -> {(FST x)::(FST (split xs)), (SND x)::(SND (split xs))}
+IN
+split ({1,10}::{2,11}::{3,12}::{4,13}::[])
