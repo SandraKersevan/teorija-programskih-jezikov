@@ -1,0 +1,1 @@
+LET f = FUN l -> FUN p -> IF (l p) THEN TRUE ELSE FALSE IN f (TRUE::[]) {1, 2}
